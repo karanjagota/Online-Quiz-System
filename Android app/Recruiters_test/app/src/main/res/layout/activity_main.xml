@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff"
+    android:padding="10dp">
+
+
+    <TextView android:text="Question 1 : " android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="15dp"
+        android:id="@+id/ques_1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000"
+        android:textIsSelectable="false" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ques_1"
+        android:layout_marginTop="0dp"
+        android:padding="15dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option "
+            android:padding="10dp" android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option"
+            android:padding="10dp" android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option "
+            android:padding="10dp" android:onClick="onRadioButtonClicked" />
+        <RadioButton
+            android:id="@+id/choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option "
+            android:padding="10dp"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer"
+        android:id="@+id/button"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:onClick="submit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your score : 0"
+        android:id="@+id/result"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
